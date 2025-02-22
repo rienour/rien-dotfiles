@@ -21,5 +21,11 @@ vim.opt.cursorline = true
 -- Highlight options
 vim.opt.hlsearch = false
 
+-- Visual Block Adjustments
+vim.opt.virtualedit = "block"
+
 -- Session Creation
 vim.opt.sessionoptions = word,blank,buffers,folds,localoptions,options,resize,tabpages,winsize
+
+-- Enable wider range of colors
+vim.opt.termguicolors = true
