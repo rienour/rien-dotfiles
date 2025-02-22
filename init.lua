@@ -29,3 +29,9 @@ vim.opt.sessionoptions = word,blank,buffers,folds,localoptions,options,resize,ta
 
 -- Enable wider range of colors
 vim.opt.termguicolors = true
+
+-- Setup leader keys
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+
+require("config.lazy")
