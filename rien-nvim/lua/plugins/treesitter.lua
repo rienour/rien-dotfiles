@@ -21,7 +21,7 @@ return {
       },
       auto_install = false,
       highlight = {
-        enabled = true,
+        enable = true,
       },
       textobjects = {
         select = {
