@@ -7,11 +7,14 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 
 -- Update tab behavior
-vim.opt.expandtab = true
+vim.opt.expandtab = false
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 0
 vim.opt.shiftwidth = 2
+vim.opt.smartindent = true
 vim.opt.autoindent = true
+vim.opt.list = true
+vim.opt.shiftround = true
 
 -- Update Neovim to interact with the system clipboard through the unnamedplus register
 vim.opt.clipboard = "unnamedplus"
