@@ -37,5 +37,5 @@ vim.g.maplocalleader = "\\"
 
 -- Setup Diagnostics
 vim.diagnostic.config({
-	virtual_lines = true,
+  virtual_lines = true,
 })

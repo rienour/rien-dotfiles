@@ -35,9 +35,9 @@ return {
             ["as"] = { query = "@local.scope", query_group = "locals", desc = "Select language scope" },
           },
           selection_modes = {
-            ['@parameter.outer'] = 'v', -- charwise
-            ['@function.outer'] = 'v', -- linewise
-            ['@class.outer'] = '<c-v>', -- blockwise
+            ["@parameter.outer"] = "v", -- charwise
+            ["@function.outer"] = "v", -- linewise
+            ["@class.outer"] = "<c-v>", -- blockwise
           },
           include_surrounding_whitespace = true,
         },

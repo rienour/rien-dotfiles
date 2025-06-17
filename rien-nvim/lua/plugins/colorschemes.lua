@@ -2,7 +2,7 @@
 local active_colorscheme = "kanagawa"
 
 -- Function to handle loading the colorscheme(s)
-local load_colorscheme = function (name, opts)
+local load_colorscheme = function(name, opts)
   require(name).setup(opts)
   vim.cmd.colorscheme(name)
 end
@@ -14,7 +14,7 @@ return {
     priority = 1000,
     enabled = active_colorscheme == "kanagawa",
     config = function()
-      load_colorscheme('kanagawa', {
+      load_colorscheme("kanagawa", {
         theme = "dragon",
         background = {
           dark = "dragon",
@@ -29,7 +29,7 @@ return {
     priority = 1000,
     enabled = active_colorscheme == "onedark",
     config = function()
-      load_colorscheme('onedark', {
+      load_colorscheme("onedark", {
         style = "darker",
       })
     end,
@@ -40,7 +40,7 @@ return {
     priority = 1000,
     enabled = active_colorscheme == "tokyonight",
     config = function()
-      load_colorscheme('tokyonight', {
+      load_colorscheme("tokyonight", {
         style = "night",
       })
     end,

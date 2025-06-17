@@ -8,7 +8,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     "--filter=blob:none",
     "--branch=stable",
     lazyrepo,
-    lazypath
+    lazypath,
   })
   if vim.v.shell_error ~= 0 then
     vim.api.nvim_echo({
@@ -25,7 +25,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = {
     {
-      import = "plugins"
+      import = "plugins",
     },
   },
   install = {
@@ -34,6 +34,6 @@ require("lazy").setup({
     },
   },
   checker = {
-    enabled = true
+    enabled = true,
   },
 })
