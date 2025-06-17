@@ -34,3 +34,8 @@ vim.opt.termguicolors = true
 -- Setup leader keys
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
+
+-- Setup Diagnostics
+vim.diagnostic.config({
+	virtual_lines = true,
+})

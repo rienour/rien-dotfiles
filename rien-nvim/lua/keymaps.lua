@@ -11,3 +11,12 @@ map("n", "<leader>wc", "<C-w>c", { desc = "Close window" })
 -- Buffer
 map("n", "<S-h>", "<cmd>bprevious<cr>", { desc = "Go to previous buffer" })
 map("n", "<S-l>", "<cmd>bnext<cr>", { desc = "Go to next buffer" })
+
+-- Diagnostic Toggles
+local diag_config = vim.diagnostic.config
+
+local toggle_virtual_lines = function()
+	local new_config = not diag_config().virtual_lines
+	diag_config({ virtual_lines = new_config })
+end
+map({ "n", "v" }, "<leader>tl", toggle_virtual_lines, { desc = "Toggle diagnostic virtual_lines" })
