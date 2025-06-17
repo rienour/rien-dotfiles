@@ -9,7 +9,7 @@ vim.opt.splitright = true
 -- Update tab behavior
 vim.opt.expandtab = true
 vim.opt.tabstop = 2
-vim.opt.softtabstop = 0
+vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.autoindent = true
 
