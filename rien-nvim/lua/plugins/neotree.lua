@@ -17,6 +17,11 @@ return {
           ["<cr>"] = "noop",
         },
       },
+      filesystem = {
+        filtered_items = {
+          visible = true,
+        },
+      },
     },
     keys = {
       {
