@@ -3,6 +3,52 @@ return {
     "nvim-telescope/telescope.nvim",
     lazy = true,
     cmd = "Telescope",
+    opts = {
+      pickers = {
+        find_files = {
+          layout_config = {
+            prompt_position = "top",
+          },
+          sorting_strategy = "ascending",
+        },
+        git_status = {
+          layout_config = {
+            prompt_position = "top",
+          },
+          sorting_strategy = "ascending",
+        },
+        old_files = {
+          layout_config = {
+            prompt_position = "top",
+          },
+          sorting_strategy = "ascending",
+        },
+        marks = {
+          layout_config = {
+            prompt_position = "top",
+          },
+          sorting_strategy = "ascending",
+        },
+        buffers = {
+          layout_config = {
+            prompt_position = "top",
+          },
+          sorting_strategy = "ascending",
+        },
+        registers = {
+          layout_config = {
+            prompt_position = "top",
+          },
+          sorting_strategy = "ascending",
+        },
+        spell_suggest = {
+          layout_config = {
+            prompt_position = "top",
+          },
+          sorting_strategy = "ascending",
+        },
+      },
+    },
     keys = {
       {
         "<leader><leader>",
@@ -11,8 +57,8 @@ return {
       },
       {
         "<leader>fg",
-        "<cmd>Telescope git_files<CR>",
-        desc = "Telescope Git files",
+        "<cmd>Telescope git_status<CR>",
+        desc = "Telescope Git status",
       },
       {
         "<leader>fb",
@@ -39,7 +85,6 @@ return {
         "<cmd>Telescope spell_suggest<CR>",
         desc = "Telescope spell_suggest",
       },
-      -- TODO: Investigate LSP integration keybinds
     },
   },
 }
