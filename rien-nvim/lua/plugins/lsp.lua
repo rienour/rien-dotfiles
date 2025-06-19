@@ -4,6 +4,7 @@ return {
     config = function()
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({
+        on_attach = require("util.lsp").on_client_attach,
         settings = {
           Lua = {
             diagnostics = {
