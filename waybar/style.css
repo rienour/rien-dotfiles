@@ -1,6 +1,6 @@
 * {
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-family: HackNerdFont, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
 }
 
 .main-display * {
@@ -47,6 +47,7 @@ button:hover {
     padding: 0 5px;
     background-color: transparent;
     color: #ffffff;
+    margin: 3px;
 }
 
 #workspaces button:hover {
@@ -54,8 +55,11 @@ button:hover {
 }
 
 #workspaces button.active {
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #FFFFFF;
+    border-image: linear-gradient(to bottom right, #112869 20%, #FFFFFF 100%) 1;
+    border-width: 2px;
+    border-style: solid;
 }
 
 #workspaces button.focused {
@@ -91,6 +95,8 @@ button:hover {
 #mpd {
     padding: 0 10px;
     color: #ffffff;
+    background-color: transparent;
+    margin: 3px;
 }
 
 #window,
@@ -104,10 +110,6 @@ button:hover {
 
 .modules-right > widget:last-child > #workspaces {
     margin-right: 0;
-}
-
-#clock {
-    background-color: #64727D;
 }
 
 #battery {
@@ -160,47 +162,11 @@ label:focus {
     background-color: #000000;
 }
 
-#cpu {
-    background-color: #2ecc71;
-    color: #000000;
-}
-
-#memory {
-    background-color: #9b59b6;
-}
-
-#disk {
-    background-color: #964B00;
-}
-
 #backlight {
     background-color: #90b1b1;
 }
 
-#network {
-    background-color: #2980b9;
-}
-
 #network.disconnected {
-    background-color: #f53c3c;
-}
-
-#pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
-}
-
-#pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
-}
-
-#wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
-}
-
-#wireplumber.muted {
     background-color: #f53c3c;
 }
 
@@ -227,7 +193,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: inherit;
 }
 
 #tray > .passive {
