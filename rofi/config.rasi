@@ -1,0 +1,46 @@
+* {
+	white: #FFFFFF;
+	black: #000000;
+	background-color: @black;
+	text-color: @white;
+}
+
+configuration {
+	modes: "drun,run,window,ssh";
+	show-icons: true;
+}  
+
+window {
+	height: 100%;
+	width: 30em;
+	location: west;
+	anchor: west;
+	border: 0px 2px 0px 0px;
+	border-color: @white;
+	background-color: @black;
+}
+
+entry, prompt {
+	text-color: @white;
+}
+
+listview {
+	scrollbar: false;
+	dynamic: false;
+	lines: 0;
+}
+
+element-icon, element-text {
+	background-color: inherit;
+	text-color: inherit;
+}
+
+element alternate normal, element normal normal {
+	background-color: @black;
+	text-color: @white;
+}
+
+element selected normal {
+	background-color: @white;
+	text-color: @black;
+}
