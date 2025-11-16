@@ -1,0 +1,8 @@
+{
+	"clock": {
+		"tooltip-format": "<tt><big>{calendar}</big></tt>",
+		"format-alt": "<span font_weight=\"heavy\">{:%R}</span>",
+		"format": "<span weight=\"heavy\">{:%R \n <small>%Y-%m-%d</small>}</span>",
+		"justify": "center"
+	}
+}
