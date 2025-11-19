@@ -1,6 +1,6 @@
 local M = {}
 
--- Naive attaching fucntion intended for use with lsp clients to add keybindings
+-- Naive attaching function intended for use with LSP clients to add keybindings
 M.on_client_attach = function(_, bufnr)
   vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = bufnr, desc = "LSP Hover" })
   vim.keymap.set("n", "gd", vim.lsp.buf.definition, { buffer = bufnr, desc = "Go to Definition" })

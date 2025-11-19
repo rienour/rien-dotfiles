@@ -2,7 +2,7 @@
 vim.opt.number = true
 vim.opt.relativenumber = true
 
--- Make splits occur ot the right and below
+-- Make splits occur to the right and below
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 

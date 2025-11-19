@@ -1,7 +1,7 @@
--- Active selected colorscheme at launch
+-- Active selected color scheme at launch
 local active_colorscheme = "kanagawa"
 
--- Function to handle loading the colorscheme(s)
+-- Function to handle loading the color scheme(s)
 local load_colorscheme = function(name, opts)
   require(name).setup(opts)
   vim.cmd.colorscheme(name)
