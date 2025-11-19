@@ -17,7 +17,7 @@ return {
           },
           sorting_strategy = "ascending",
         },
-        old_files = {
+        oldfiles = {
           layout_config = {
             prompt_position = "top",
           },
