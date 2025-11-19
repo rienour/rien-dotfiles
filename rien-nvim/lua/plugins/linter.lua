@@ -8,6 +8,11 @@ return {
       },
       linters_by_ft = {
         lua = { "luacheck" },
+        ts = { "eslint" },
+        tsx = { "eslint" },
+        js = { "eslint" },
+        jsx = { "eslint" },
+        vue = { "eslint" },
       },
     },
     config = function()
