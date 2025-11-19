@@ -26,7 +26,7 @@ vim.opt.hlsearch = false
 vim.opt.virtualedit = "block"
 
 -- Session Creation
-vim.opt.sessionoptions = word, blank, buffers, folds, localoptions, options, resize, tabpages, winsize
+vim.opt.sessionoptions = "blank,buffers,folds,localoptions,options,resize,tabpages,winsize"
 
 -- Enable wider range of colors
 vim.opt.termguicolors = true
