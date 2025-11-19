@@ -42,6 +42,8 @@ local lsp_configs = {
     },
   },
   vue_ls = {},
+  ["golangci_lint_ls"] = {},
+  gopls = {},
 }
 
 return {
