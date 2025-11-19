@@ -35,6 +35,10 @@ vim.opt.termguicolors = true
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- Set spelling enabled
+vim.o.spell = true
+vim.o.spelllang = "en"
+
 -- Setup Diagnostics
 vim.diagnostic.config({
   virtual_lines = true,
