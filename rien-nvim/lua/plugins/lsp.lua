@@ -44,6 +44,14 @@ local lsp_configs = {
   vue_ls = {},
   ["golangci_lint_ls"] = {},
   gopls = {},
+  basedpyright = {
+    -- TODO: Investigate alternatives to allow global use
+    -- Might be able to use VIRTUAL_ENV environment variable
+    cmd = { "uv", "run", "basedpyright-langserver", "--stdio" },
+    settings = {
+      python = {},
+    },
+  },
 }
 
 return {

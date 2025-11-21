@@ -24,6 +24,11 @@ return {
         vue = { "prettier" },
         json = { "prettier" },
         jsonc = { "prettier" },
+        python = {
+          "ruff_organize_imports",
+          "ruff_fix",
+          "ruff_format",
+        },
       },
       default_format_opts = {
         lsp_format = "fallback",
