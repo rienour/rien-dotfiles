@@ -10,3 +10,7 @@ The following external dependencies are required/recommended to utilize these co
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [stylua](https://github.com/JohnnyMorganz/StyLua)
 - [lua-language-server](https://github.com/LuaLS/lua-language-server)
+- [vtsls](https://github.com/yioneko/vtsls)
+- [vuels](https://github.com/vuejs/language-tools/tree/master/packages/language-server)
+- [gopls](https://go.dev/gopls/)
+- [golangci-lint](https://github.com/golangci/golangci-lint)
