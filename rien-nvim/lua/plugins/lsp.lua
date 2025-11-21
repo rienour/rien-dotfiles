@@ -51,11 +51,9 @@ return {
     "neovim/nvim-lspconfig",
     config = function()
       for name, options in pairs(lsp_configs) do
-        vim.lsp.config(name, {
-          on_attach = require("util.lsp").on_client_attach,
-          settings = options.settings,
-          filetypes = options.filetypes,
-        })
+        -- Add the functionality to bind the key binds to the LSP
+        options.on_attach = require("util.lsp").on_client_attach
+        vim.lsp.config(name, options)
         vim.lsp.enable({ name })
       end
     end,
