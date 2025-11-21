@@ -53,8 +53,8 @@ return {
       for name, options in pairs(lsp_configs) do
         vim.lsp.config(name, {
           on_attach = require("util.lsp").on_client_attach,
-          settings = options.settings or {},
-          filetypes = options.filetypes or {},
+          settings = options.settings,
+          filetypes = options.filetypes,
         })
         vim.lsp.enable({ name })
       end
