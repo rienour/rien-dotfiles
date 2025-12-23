@@ -2,15 +2,30 @@
 
 This is a customization for a Neovim installation that contains the baseline configurations and plugins for getting started with a my personal preferences on a development environment.
 
+When performing the installation/setup is is recommended to utilize a separate directory from the based Neovim installation with the `NVIM_APPNAME` variable.
+
 ## Dependencies
 
 The following external dependencies are required/recommended to utilize these configuration files:
 
-- [neovim](https://github.com/neovim/neovim)
-- [ripgrep](https://github.com/BurntSushi/ripgrep)
-- [stylua](https://github.com/JohnnyMorganz/StyLua)
-- [lua-language-server](https://github.com/LuaLS/lua-language-server)
-- [vtsls](https://github.com/yioneko/vtsls)
-- [vuels](https://github.com/vuejs/language-tools/tree/master/packages/language-server)
-- [gopls](https://go.dev/gopls/)
-- [golangci-lint](https://github.com/golangci/golangci-lint)
+| Dependency | Usage | Required? |
+| --- | --- | --- |
+| [neovim](https://github.com/neovim/neovim) | Core for the configuration files| Yes |
+| [ripgrep](https://github.com/BurntSushi/ripgrep) | Supports Telescope for faster file tree parsing | No |
+| [stylua](https://github.com/JohnnyMorganz/StyLua) | Formatter for Lua files | No |
+| [lua-language-server](https://github.com/LuaLS/lua-language-server) | Lua Langauge Server | No |
+| [vtsls](https://github.com/yioneko/vtsls) | TypeScript Language Server | No |
+| [vuels](https://github.com/vuejs/language-tools/tree/master/packages/language-server) | TypeScript/JavaScript Language Server | No |
+| [gopls](https://go.dev/gopls/) | Go Langauge Server | No |
+| [golangci-lint](https://github.com/golangci/golangci-lint) | Go Linter and Formatter | No |
+| [Roslyn Language Server](https://github.com/dotnet/roslyn) | C# Langauge Server and Formatter | No |
+| [prettier](https://github.com/prettier/prettier) | JS/TS Ecosystem Code Formatter | No | 
+
+## Environment Variables
+
+These are environment variables that are utilized to provide flexibility when loading pieces of the configuration that are dynamic, such as Node or NuGet packages.
+
+| Variable Name | Usage | Language(s) |
+| --- | --- | --- |
+| VUE_LS_PATH | File path that points to the @vue/language-server installation. | Vue.JS projects with TypeScript |
+| ROSLYN_LS_PATH | File path that points to the Roslyn Language Server dll | C# |
