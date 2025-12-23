@@ -4,7 +4,7 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {
       sections = {
-        lualine_a = {},
+        lualine_a = { "filename" },
         lualine_b = {},
         lualine_c = {},
         lualine_x = {},
@@ -12,9 +12,9 @@ return {
         lualine_z = { "lsp_status" },
       },
       inactive_sections = {
-        lualine_a = {},
+        lualine_a = { "filename" },
         lualine_b = {},
-        lualine_c = { "filename" },
+        lualine_c = {},
         lualine_x = { "location" },
         lualine_y = {},
         lualine_z = { "diagnostics" },
