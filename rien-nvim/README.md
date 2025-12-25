@@ -15,8 +15,8 @@ The following external dependencies are required/recommended to utilize these co
 | [ripgrep](https://github.com/BurntSushi/ripgrep) | Supports Telescope for faster file tree parsing | No |
 | [stylua](https://github.com/JohnnyMorganz/StyLua) | Formatter for Lua files | No |
 | [lua-language-server](https://github.com/LuaLS/lua-language-server) | Lua Langauge Server | No |
-| [vtsls](https://github.com/yioneko/vtsls) | TypeScript Language Server | No |
-| [vuels](https://github.com/vuejs/language-tools/tree/master/packages/language-server) | TypeScript/JavaScript Language Server | No |
+| [vtsls](https://github.com/yioneko/vtsls) | JavaScript/TypeScript Language Server | No |
+| [vuels](https://github.com/vuejs/language-tools/tree/master/packages/language-server) | TypeScript/JavaScript Language Server for Vuejs| No |
 | [gopls](https://go.dev/gopls/) | Go Langauge Server | No |
 | [golangci-lint](https://github.com/golangci/golangci-lint) | Go Linter and Formatter | No |
 | [Roslyn Language Server](https://github.com/dotnet/roslyn) | C# Langauge Server and Formatter | No |
