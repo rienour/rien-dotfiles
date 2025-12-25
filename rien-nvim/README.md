@@ -11,6 +11,7 @@ The following external dependencies are required/recommended to utilize these co
 | Dependency | Usage | Required? |
 | --- | --- | --- |
 | [neovim](https://github.com/neovim/neovim) | Core for the configuration files| Yes |
+| [tree-sitter-cli](https://github.com/tree-sitter/tree-sitter) | Utility to leverage syntax highlighting and context based selection | No |
 | [ripgrep](https://github.com/BurntSushi/ripgrep) | Supports Telescope for faster file tree parsing | No |
 | [stylua](https://github.com/JohnnyMorganz/StyLua) | Formatter for Lua files | No |
 | [lua-language-server](https://github.com/LuaLS/lua-language-server) | Lua Langauge Server | No |
