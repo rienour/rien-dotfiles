@@ -9,7 +9,6 @@ return {
         "BufNewFile",
       },
       linters_by_ft = {
-        lua = { "luacheck" },
         ts = { "eslint" },
         tsx = { "eslint" },
         js = { "eslint" },
