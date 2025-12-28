@@ -21,6 +21,10 @@ The following external dependencies are required/recommended to utilize these co
 | [golangci-lint](https://github.com/golangci/golangci-lint) | Go Linter and Formatter | No |
 | [Roslyn Language Server](https://github.com/dotnet/roslyn) | C# Langauge Server and Formatter | No |
 | [prettier](https://github.com/prettier/prettier) | JS/TS Ecosystem Code Formatter | No | 
+| [uv](https://docs.astral.sh/uv) | Python Virtual Environment Manager | No |
+| [black](https://pypi.org/project/black/) | Python Code Formatter | No |
+| [ruff](https://github.com/astral-sh/ruff) | Python Code Formatter and Linter | No |
+| [pylint](https://www.pylint.org/) | Standalone Python Linter | No |
 
 ## Environment Variables
 

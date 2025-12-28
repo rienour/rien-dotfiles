@@ -15,6 +15,7 @@ return {
         jsx = { "eslint" },
         vue = { "eslint" },
         go = { "golangci-lint" },
+        python = { "pylint" },
       },
     },
     config = function(_, opts)

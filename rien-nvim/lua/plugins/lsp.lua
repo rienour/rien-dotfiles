@@ -44,6 +44,20 @@ local lsp_configs = {
   vue_ls = {},
   ["golangci_lint_ls"] = {},
   gopls = {},
+  basedpyright = {
+    settings = {
+      basedpyright = {
+        analysis = {
+          typeCheckingMode = "strict",
+          diagnosticSeverityOverrides = {
+            -- Disable warnings preferred from Pylint
+            reportUnusedVariable = false,
+            reportUnusedImport = false,
+          },
+        },
+      },
+    },
+  },
 }
 
 return {
