@@ -58,6 +58,7 @@ local lsp_configs = {
       },
     },
   },
+  clangd = {},
 }
 
 return {

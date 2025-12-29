@@ -25,6 +25,7 @@ The following external dependencies are required/recommended to utilize these co
 | [black](https://pypi.org/project/black/) | Python Code Formatter | No |
 | [ruff](https://github.com/astral-sh/ruff) | Python Code Formatter and Linter | No |
 | [pylint](https://www.pylint.org/) | Standalone Python Linter | No |
+| [clangd](https://clangd.llvm.org) | C/C++ Language Server and Formatter | No |
 
 ## Environment Variables
 

@@ -4,6 +4,7 @@ local ensure_installed = {
   "c",
   "cpp",
   "dockerfile",
+  "doxygen",
   "lua",
   "vim",
   "vimdoc",
