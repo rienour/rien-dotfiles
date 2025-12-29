@@ -21,3 +21,5 @@ The baseline desktop environment is based on an Arch system with Hyprland as the
 | [rofi](https://github.com/davatorium/rofi) | Application Launcher | Launching applications in the Hyprland environment |
 | [alacritty](https://alacritty.org/) | Terminal Emulator | Utilizing a Terminal in the Hyprland enviroment |
 | [Hyprpolkitagent](https://github.com/hyprwm/hyprpolkitagent) | Authentication Agent for Hyprland | Application Elevation Request | 
+| [slurp](https://github.com/emersion/slurp/) | Wayland Region Selector | Region Screenshot functionality |
+| [grim](https://gitlab.freedesktop.org/emersion/grim) | Wayland image region capture | Region Screenshot functionality |
