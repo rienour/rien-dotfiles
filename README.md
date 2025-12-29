@@ -18,6 +18,7 @@ The baseline desktop environment is based on an Arch system with Hyprland as the
 | --- | --- | ---|
 | [Hyprland](https://github.com/hyprwm/Hyprland) | Window Compositor | Viewing windows open on the system |
 | [Waybar](https://github.com/Alexays/Waybar) | System Status Bar | Viewing task bar with system and workspace information in the Hyprland environment |
+| [dunst](https://github.com/dunst-project/dunst) | Notification System | Showing notifications in the desktop environment |
 | [rofi](https://github.com/davatorium/rofi) | Application Launcher | Launching applications in the Hyprland environment |
 | [alacritty](https://alacritty.org/) | Terminal Emulator | Utilizing a Terminal in the Hyprland enviroment |
 | [Hyprpolkitagent](https://github.com/hyprwm/hyprpolkitagent) | Authentication Agent for Hyprland | Application Elevation Request | 
