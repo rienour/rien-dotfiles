@@ -14,7 +14,6 @@ return {
         js = { "eslint" },
         jsx = { "eslint" },
         vue = { "eslint" },
-        go = { "golangci-lint" },
         python = { "pylint" },
       },
     },
