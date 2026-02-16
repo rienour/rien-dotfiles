@@ -9,9 +9,9 @@ return {
         "BufNewFile",
       },
       linters_by_ft = {
-        ts = { "eslint" },
+        typesciprt = { "eslint" },
         tsx = { "eslint" },
-        js = { "eslint" },
+        javascript = { "eslint" },
         jsx = { "eslint" },
         vue = { "eslint" },
         python = { "pylint" },

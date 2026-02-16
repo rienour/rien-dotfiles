@@ -15,10 +15,8 @@ return {
     opts = {
       formatters_by_ft = {
         lua = { "stylua" },
-        ts = { "prettier" },
         tsx = { "prettier" },
         typescript = { "prettier" },
-        js = { "prettier" },
         jsx = { "prettier" },
         javascript = { "prettier" },
         vue = { "prettier" },
