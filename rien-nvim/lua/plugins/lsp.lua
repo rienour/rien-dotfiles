@@ -59,6 +59,7 @@ local lsp_configs = {
     },
   },
   clangd = {},
+  eslint = {},
 }
 
 return {
