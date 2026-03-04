@@ -34,6 +34,7 @@ local ensure_installed = {
 -- Autocommand to verify treesitter launchers, and installs if needed, when
 -- opening a buffer
 vim.api.nvim_create_autocmd({ "Filetype" }, {
+  pattern = ensure_installed,
   callback = function(event)
     local ok, nvim_treesitter = pcall(require, "nvim-treesitter")
 
