@@ -31,9 +31,11 @@ map("n", "<leader><tab>c", "<cmd>tabclose<cr>", { desc = "Close Tab", silent = t
 map({ "n", "i" }, "<esc>", "<cmd>noh<cr><esc>", { desc = "Escape and clear hlsearch" })
 
 -- Diagnostics
+local diag_config = vim.diagnostic.config
 local toggle_virtual_lines = function()
   local new_config = not diag_config().virtual_lines
   diag_config({ virtual_lines = new_config })
+  vim.notify("Virtuals Lines: " .. (new_config and "on" or "off"))
 end
 map({ "n", "v" }, "<leader>tl", toggle_virtual_lines, { desc = "Toggle diagnostic virtual_lines" })
 map("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Line Diagnostics" })
