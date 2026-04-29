@@ -12,6 +12,7 @@ local lint_events = {
 
 local linters_by_ft = {
   go = { "golangci_lint_ls" },
+  python = { "pylint" },
 }
 
 local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })

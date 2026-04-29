@@ -14,6 +14,8 @@ local servers = {
   "gopls",
   "clangd",
   "eslint",
+  "basedpyright",
+  "ruff",
 }
 
 vim.lsp.enable(servers)
