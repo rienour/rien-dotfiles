@@ -23,6 +23,8 @@ require("conform").setup({
     jsonc = { "prettier" },
     markdown = { "prettier" },
     python = { "black", "ruff_organize_imports" },
+    cpp = { "clang-format" },
+    c = { "clang-format" },
   },
 })
 
