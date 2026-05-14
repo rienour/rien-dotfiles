@@ -5,7 +5,7 @@ local main_desktop_left = {
 	mode = "1920x1080@180.00Hz",
 	position = "-1080x-0",
 	scale = "1",
-	transform = "3",
+	transform = 3,
 }
 
 local main_desktop_center = {
@@ -39,10 +39,10 @@ local hp_laptop = {
 
 M.get_dev_monitors = function(device)
 	if device == "main_desktop" then
-		hl.workspace_rule({ workspace = "1", monitor = main_desktop.output })
-		hl.workspace_rule({ workspace = "2", monitor = main_desktop.output })
-		hl.workspace_rule({ workspace = "3", monitor = main_desktop.output })
-		hl.workspace_rule({ workspace = "4", monitor = main_desktop.output })
+		hl.workspace_rule({ workspace = "1", monitor = main_desktop_center.output })
+		hl.workspace_rule({ workspace = "2", monitor = main_desktop_center.output })
+		hl.workspace_rule({ workspace = "3", monitor = main_desktop_center.output })
+		hl.workspace_rule({ workspace = "4", monitor = main_desktop_center.output })
 		hl.workspace_rule({ workspace = "5", monitor = main_desktop_left.output })
 		hl.workspace_rule({ workspace = "6", monitor = main_desktop_left.output })
 		hl.workspace_rule({ workspace = "7", monitor = main_desktop_left.output })
