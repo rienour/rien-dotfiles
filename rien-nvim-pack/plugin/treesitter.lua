@@ -33,6 +33,7 @@ local ensure_installed = {
   "php",
   "tsx",
   "yaml",
+  "rust",
 }
 
 -- Autocommand to verify treesitter launchers, and installs if needed, when

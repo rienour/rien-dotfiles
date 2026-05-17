@@ -16,6 +16,7 @@ local servers = {
   "eslint",
   "basedpyright",
   "ruff",
+  "rust_analyzer",
 }
 
 vim.lsp.enable(servers)
