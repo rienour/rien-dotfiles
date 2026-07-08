@@ -11,8 +11,9 @@ end
 -------------------
 ---- AUTOSTART ---- ----------------
 hl.on("hyprland.start", function()
-	hl.exec_cmd("waybar")
-	hl.exec_cmd("systemctl --user start hyprpolkitagent")
+	hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE")
+	hl.exec_cmd("systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE")
+	hl.exec_cmd("systemctl --user start hyprland-session.target")
 end)
 
 -------------------------------
@@ -23,7 +24,6 @@ hl.env("HYPRCURSOR_SIZE", "24")
 hl.env("LIBVA_DRIVER_NAME", "nvidia")
 hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
 hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
-
 -----------------------
 ----- PERMISSIONS -----
 -----------------------
