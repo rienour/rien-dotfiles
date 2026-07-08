@@ -51,3 +51,8 @@ end, { desc = "Next Warning", silent = true })
 map("n", "[w", function()
   vim.diagnostic.jump({ count = -1, severity = vim.diagnostic.severity.WARN })
 end, { desc = "Prev Warning", silent = true })
+
+-- Inlay Hints
+map({ "n", "v" }, "<leader>ti", function()
+  vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+end)
