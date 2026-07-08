@@ -1,3 +1,5 @@
+require("environment").setup()
+
 local programs = require("programs")
 local monitors = require("monitors")
 
@@ -16,14 +18,6 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("systemctl --user start hyprland-session.target")
 end)
 
--------------------------------
----- ENVIRONMENT VARIABLES ----
--------------------------------
-hl.env("XCURSOR_SIZE", "24")
-hl.env("HYPRCURSOR_SIZE", "24")
-hl.env("LIBVA_DRIVER_NAME", "nvidia")
-hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
-hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
 -----------------------
 ----- PERMISSIONS -----
 -----------------------
