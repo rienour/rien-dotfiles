@@ -10,7 +10,7 @@ local main_desktop_left = {
 
 local main_desktop_center = {
 	output = "DP-5",
-	mode = "3840x1920@144.00Hz",
+	mode = "3840x2160@144.00Hz",
 	position = "0x0",
 	scale = "1",
 }
