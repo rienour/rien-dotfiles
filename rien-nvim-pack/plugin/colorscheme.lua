@@ -1,9 +1,3 @@
--- Function to handle loading the color scheme(s)
-local load_colorscheme = function(name, opts)
-  require(name).setup(opts)
-  vim.cmd.colorscheme(name)
-end
-
 local active_colorscheme = os.getenv("NVIM_COLORSCHEME")
 
 -- Configurations for used color schemes
