@@ -2,7 +2,7 @@
 [
   {
     "layer": "top",
-    "height": 34,
+    "height": 40,
     "spacing": 0,
     "output": "DP-5",
     "name": "main-display",
@@ -73,7 +73,7 @@
   },
   {
     "layer": "top",
-    "height": 34,
+    "height": 40,
     "spacing": 0,
     "output": ["HDMI-A-3", "DP-4"],
     "include": ["$HOME/.config/waybar/common-modules.json"],
