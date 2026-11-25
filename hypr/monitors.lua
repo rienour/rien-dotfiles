@@ -37,6 +37,15 @@ local hp_laptop = {
 	},
 }
 
+local framework_laptop = {
+  {
+    output = "eDP-2",
+    mode = "2560x1600@165.00Hz",
+    position = "0x0",
+    scale = "1",
+  },
+}
+
 M.get_dev_monitors = function(device)
 	if device == "main_desktop" then
 		hl.workspace_rule({ workspace = "1", monitor = main_desktop_center.output })
@@ -54,6 +63,8 @@ M.get_dev_monitors = function(device)
 		return main_desktop
 	elseif device == "hp_laptop" then
 		return hp_laptop
+  elseif device == "framework_laptop" then
+    return framework_laptop
 	else
 		return nil
 	end
