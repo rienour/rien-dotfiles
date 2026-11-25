@@ -4,7 +4,7 @@
     "layer": "top",
     "height": 40,
     "spacing": 0,
-    "output": "DP-5",
+    "output": ["DP-5","eDP-2", "eDP-1"],
     "name": "main-display",
     "include": ["$HOME/.config/waybar/common-modules.json"],
     "modules-left": ["hyprland/workspaces"],
