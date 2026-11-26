@@ -1,15 +1,10 @@
 // -*- mode: jsonc -*-
 [
   {
-    "layer": "top",
-    "height": 40,
-    "spacing": 0,
-    "output": ["DP-5","eDP-2", "eDP-1"],
-    "name": "main-display",
-    "include": ["$HOME/.config/waybar/common-modules.json"],
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["hyprland/window"],
+    "output": ["DP-5"],
+    "include": ["$HOME/.config/waybar/main-bar.json"],
     "modules-right": [
+      "battery",
       "custom/media",
       "tray",
       "pulseaudio",
@@ -18,57 +13,26 @@
       "memory",
       "clock",
     ],
-    "tray": {
-      "icon-size": 24,
-      "spacing": 10,
-    },
-    "cpu": {
-      "format": "{usage}% ",
-      "tooltip": true,
-    },
-    "memory": {
-      "format": "{}% ",
-    },
-    "network": {
-      "format-wifi": "{essid} ({signalStrength}%) ",
-      "format-ethernet": "{ipaddr} ",
-      "tooltip-format": "{ifname} via {gwaddr} ",
-      "format-linked": "{ifname} (No IP) ",
-      "format-disconnected": "Disconnected ⚠",
-      "format-alt": "{ifname}: {ipaddr}/{cidr}",
-    },
-    "pulseaudio": {
-      "format": "{volume}% {icon} {format_source}",
-      "format-bluetooth": "{volume}% {icon} {format_source}",
-      "format-bluetooth-muted": " {icon} {format_source}",
-      "format-muted": " {format_source}",
-      "format-source": "{volume}% ",
-      "format-source-muted": "",
+  },
+  {
+    "output": ["eDP-2", "eDP-1"],
+    "include": ["$HOME/.config/waybar/main-bar.json"],
+    "modules-right": [
+      "battery",
+      "custom/media",
+      "tray",
+      "pulseaudio",
+      "network",
+      "cpu",
+      "memory",
+      "clock",
+    ],
+    "battery": {
+      "format": "{capacity}% {icon}",
       "format-icons": {
-        "headphone": "",
-        "hands-free": "",
-        "headset": "",
-        "phone": "",
-        "portable": "",
-        "car": "",
-        "default": ["", "", ""],
+        "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
       },
-      "on-click": "pavucontrol",
-    },
-    "custom/media": {
-      "format": "{icon} {text}",
-      "return-type": "json",
-      "max-length": 40,
-      "format-icons": {
-        "spotify": "",
-        "default": "🎜",
-      },
-      "escape": true,
-      "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null", // Script in resources folder
-      // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-    },
-    "hyprland/window": {
-      "separate-outputs": true,
     },
   },
   {
